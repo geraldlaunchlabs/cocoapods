@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "FBViewController.h"
+#import "HomeViewController.h"
+#import "MenuViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
@@ -22,14 +23,21 @@
                              didFinishLaunchingWithOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
     self.window.autoresizesSubviews=YES;
-    FBViewController *homeViewController = [[FBViewController alloc] init];
-    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeViewController];
-    self.window.rootViewController = homeNav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    MenuViewController *menu = [[MenuViewController alloc] init];
+    HomeViewController *home = [[HomeViewController alloc] init];
+    JASidePanelController *panel = [[JASidePanelController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:home];
+    panel.centerPanel = nav;
+    panel.leftPanel = menu;
+    self.window.rootViewController = panel;
+    
     [self.window makeKeyAndVisible];
     
     application.statusBarStyle = UIStatusBarStyleLightContent;
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -71,6 +79,28 @@
     // Add any custom logic here.
     return handled;
 }
+
+- (void)changeRootViewController:(UIViewController*)viewController {
+    
+    if (!self.window.rootViewController) {
+        self.window.rootViewController = viewController;
+        return;
+    }
+    
+    UIView *snapShot = [self.window snapshotViewAfterScreenUpdates:YES];
+    
+    [viewController.view addSubview:snapShot];
+    
+    self.window.rootViewController = viewController;
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        snapShot.layer.opacity = 0;
+        snapShot.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5);
+    } completion:^(BOOL finished) {
+        [snapShot removeFromSuperview];
+    }];
+}
+
 
 #pragma mark - Core Data stack
 

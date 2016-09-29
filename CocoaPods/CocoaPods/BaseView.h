@@ -24,6 +24,7 @@
 + (void)viewMakeRound:(UIView *)image;
 + (void)viewAddBorder:(UIView *)view size:(float)size color:(UIColor *)color clipsToBounds:(BOOL)clip;
 + (void)adjustFontSizeToFitLabel:(UILabel *)label;
++ (void)addShadowToImageView:(UIImageView *)image;
 
 @end
 

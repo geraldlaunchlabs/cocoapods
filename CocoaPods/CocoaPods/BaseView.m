@@ -135,4 +135,12 @@
     label.font = [UIFont systemFontOfSize:label.frame.size.height-2];
 }
 
++ (void)addShadowToImageView:(UIImageView *)image {
+    image.layer.shadowColor = [UIColor blackColor].CGColor;
+    image.layer.shadowRadius = 1.0;
+    image.layer.shadowOpacity = 1.0;
+    image.layer.shadowOffset = CGSizeZero;
+    image.layer.masksToBounds = NO;
+}
+
 @end

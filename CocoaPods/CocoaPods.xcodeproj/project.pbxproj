@@ -14,12 +14,22 @@
 		6042BD0A1D913B2D0094FE31 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042BD081D913B2D0094FE31 /* BaseViewController.m */; };
 		6042BD0F1D913BB20094FE31 /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042BD0E1D913BB20094FE31 /* FBViewController.m */; };
 		6042BD131D913DAB0094FE31 /* FBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042BD121D913DAB0094FE31 /* FBView.m */; };
+		6051CF2C1D9BC94C00518035 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051CF2B1D9BC94C00518035 /* JASidePanelController.m */; };
+		6051CF301D9BCB7400518035 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051CF2F1D9BCB7400518035 /* HomeViewController.m */; };
+		6051CF341D9BCDE100518035 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051CF331D9BCDE100518035 /* UIViewController+JASidePanel.m */; };
+		605616F01D9CB3BB00D89992 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 605616EF1D9CB3BB00D89992 /* HomeView.m */; };
+		605616F21D9CC24300D89992 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 605616F11D9CC24300D89992 /* Default-568h@2x.png */; };
 		608EDE691D8FA0F100749378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE681D8FA0F100749378 /* main.m */; };
 		608EDE6C1D8FA0F100749378 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE6B1D8FA0F100749378 /* AppDelegate.m */; };
 		608EDE751D8FA0F100749378 /* CocoaPods.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE731D8FA0F100749378 /* CocoaPods.xcdatamodeld */; };
 		608EDE771D8FA0F100749378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608EDE761D8FA0F100749378 /* Assets.xcassets */; };
 		608EDE851D8FA0F100749378 /* CocoaPodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE841D8FA0F100749378 /* CocoaPodsTests.m */; };
 		608EDE901D8FA0F100749378 /* CocoaPodsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE8F1D8FA0F100749378 /* CocoaPodsUITests.m */; };
+		60BF88DB1D9D04870028D836 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BF88DA1D9D04870028D836 /* Launch Screen.storyboard */; };
+		60BF88DE1D9D0DCE0028D836 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF88DD1D9D0DCE0028D836 /* MenuViewController.m */; };
+		60BF88E21D9D167F0028D836 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF88E11D9D167F0028D836 /* MenuView.m */; };
+		60BF88E41D9D2AD40028D836 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 60BF88E31D9D2AD40028D836 /* fb.png */; };
+		60BF88E61D9D2ADA0028D836 /* twit.png in Resources */ = {isa = PBXBuildFile; fileRef = 60BF88E51D9D2ADA0028D836 /* twit.png */; };
 		616D88A1390D8DDAC8970C45 /* libPods-CocoaPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A46F2FC24C269524F683C3 /* libPods-CocoaPods.a */; };
 		7C1DC6A4BAE6CE98D8308D25 /* libPods-CocoaPodsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9968B3FF41574572A05C142D /* libPods-CocoaPodsTests.a */; };
 		8465F75560BBD68EC323166C /* libPods-CocoaPodsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EA0208FB6105391476B813 /* libPods-CocoaPodsUITests.a */; };
@@ -58,6 +68,15 @@
 		6042BD0E1D913BB20094FE31 /* FBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBViewController.m; path = ../../CocoaPods/CocoaPods/FBViewController.m; sourceTree = "<group>"; };
 		6042BD111D913DAB0094FE31 /* FBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBView.h; path = ../../CocoaPods/CocoaPods/FBView.h; sourceTree = "<group>"; };
 		6042BD121D913DAB0094FE31 /* FBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBView.m; path = ../../CocoaPods/CocoaPods/FBView.m; sourceTree = "<group>"; };
+		6051CF2A1D9BC94C00518035 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		6051CF2B1D9BC94C00518035 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		6051CF2E1D9BCB7400518035 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../../CocoaPods/CocoaPods/HomeViewController.h; sourceTree = "<group>"; };
+		6051CF2F1D9BCB7400518035 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../../CocoaPods/CocoaPods/HomeViewController.m; sourceTree = "<group>"; };
+		6051CF321D9BCDE100518035 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		6051CF331D9BCDE100518035 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		605616EE1D9CB3BB00D89992 /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeView.h; path = ../../CocoaPods/CocoaPods/HomeView.h; sourceTree = "<group>"; };
+		605616EF1D9CB3BB00D89992 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeView.m; path = ../../CocoaPods/CocoaPods/HomeView.m; sourceTree = "<group>"; };
+		605616F11D9CC24300D89992 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../CocoaPods/Default-568h@2x.png"; sourceTree = "<group>"; };
 		608EDE641D8FA0F100749378 /* CocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608EDE681D8FA0F100749378 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		608EDE6A1D8FA0F100749378 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +90,13 @@
 		608EDE8B1D8FA0F100749378 /* CocoaPodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608EDE8F1D8FA0F100749378 /* CocoaPodsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsUITests.m; sourceTree = "<group>"; };
 		608EDE911D8FA0F100749378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60BF88DA1D9D04870028D836 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		60BF88DC1D9D0DCE0028D836 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../../CocoaPods/CocoaPods/MenuViewController.h; sourceTree = "<group>"; };
+		60BF88DD1D9D0DCE0028D836 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../../CocoaPods/CocoaPods/MenuViewController.m; sourceTree = "<group>"; };
+		60BF88E01D9D167F0028D836 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = ../../CocoaPods/CocoaPods/MenuView.h; sourceTree = "<group>"; };
+		60BF88E11D9D167F0028D836 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = ../../CocoaPods/CocoaPods/MenuView.m; sourceTree = "<group>"; };
+		60BF88E31D9D2AD40028D836 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		60BF88E51D9D2ADA0028D836 /* twit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twit.png; sourceTree = "<group>"; };
 		71CA3F837C08BFB6997A71EE /* Pods-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPods.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CocoaPods/Pods-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 		9968B3FF41574572A05C142D /* libPods-CocoaPodsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaPodsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		997100CD16E4EE6784B34952 /* Pods-CocoaPodsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CocoaPodsUITests/Pods-CocoaPodsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,10 +151,10 @@
 		6042BD0B1D913B430094FE31 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				6042BD081D913B2D0094FE31 /* BaseViewController.m */,
-				6042BD071D913B2D0094FE31 /* BaseViewController.h */,
 				6042BD051D913B2D0094FE31 /* BaseView.h */,
 				6042BD061D913B2D0094FE31 /* BaseView.m */,
+				6042BD081D913B2D0094FE31 /* BaseViewController.m */,
+				6042BD071D913B2D0094FE31 /* BaseViewController.h */,
 			);
 			name = BaseView;
 			sourceTree = "<group>";
@@ -153,9 +179,35 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		6051CF2D1D9BC95900518035 /* JASidePanel */ = {
+			isa = PBXGroup;
+			children = (
+				6051CF2A1D9BC94C00518035 /* JASidePanelController.h */,
+				6051CF2B1D9BC94C00518035 /* JASidePanelController.m */,
+				6051CF321D9BCDE100518035 /* UIViewController+JASidePanel.h */,
+				6051CF331D9BCDE100518035 /* UIViewController+JASidePanel.m */,
+			);
+			name = JASidePanel;
+			sourceTree = "<group>";
+		};
+		6051CF311D9BCB7900518035 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				605616EE1D9CB3BB00D89992 /* HomeView.h */,
+				605616EF1D9CB3BB00D89992 /* HomeView.m */,
+				6051CF2E1D9BCB7400518035 /* HomeViewController.h */,
+				6051CF2F1D9BCB7400518035 /* HomeViewController.m */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
 		608EDE5B1D8FA0F100749378 = {
 			isa = PBXGroup;
 			children = (
+				60BF88E31D9D2AD40028D836 /* fb.png */,
+				60BF88E51D9D2ADA0028D836 /* twit.png */,
+				60BF88DA1D9D04870028D836 /* Launch Screen.storyboard */,
+				605616F11D9CC24300D89992 /* Default-568h@2x.png */,
 				608EDE661D8FA0F100749378 /* CocoaPods */,
 				608EDE831D8FA0F100749378 /* CocoaPodsTests */,
 				608EDE8E1D8FA0F100749378 /* CocoaPodsUITests */,
@@ -179,7 +231,10 @@
 			isa = PBXGroup;
 			children = (
 				6042BD101D913D7B0094FE31 /* AppDelegate */,
+				6051CF2D1D9BC95900518035 /* JASidePanel */,
 				6042BD0B1D913B430094FE31 /* BaseView */,
+				6051CF311D9BCB7900518035 /* HomeView */,
+				60BF88DF1D9D0DD80028D836 /* MenuView */,
 				6042BD0C1D913B710094FE31 /* FBView */,
 				608EDE761D8FA0F100749378 /* Assets.xcassets */,
 				608EDE7B1D8FA0F100749378 /* Info.plist */,
@@ -213,6 +268,17 @@
 				608EDE911D8FA0F100749378 /* Info.plist */,
 			);
 			path = CocoaPodsUITests;
+			sourceTree = "<group>";
+		};
+		60BF88DF1D9D0DD80028D836 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				60BF88E01D9D167F0028D836 /* MenuView.h */,
+				60BF88E11D9D167F0028D836 /* MenuView.m */,
+				60BF88DC1D9D0DCE0028D836 /* MenuViewController.h */,
+				60BF88DD1D9D0DCE0028D836 /* MenuViewController.m */,
+			);
+			name = MenuView;
 			sourceTree = "<group>";
 		};
 		7D9A6B7C67517BDC92AC5FA8 /* Pods */ = {
@@ -303,6 +369,7 @@
 				TargetAttributes = {
 					608EDE631D8FA0F100749378 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HPNA6LGUE7;
 					};
 					608EDE7F1D8FA0F100749378 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -339,7 +406,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60BF88DB1D9D04870028D836 /* Launch Screen.storyboard in Resources */,
+				60BF88E61D9D2ADA0028D836 /* twit.png in Resources */,
+				60BF88E41D9D2AD40028D836 /* fb.png in Resources */,
 				608EDE771D8FA0F100749378 /* Assets.xcassets in Resources */,
+				605616F21D9CC24300D89992 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,8 +562,14 @@
 				6042BD131D913DAB0094FE31 /* FBView.m in Sources */,
 				608EDE751D8FA0F100749378 /* CocoaPods.xcdatamodeld in Sources */,
 				6042BD091D913B2D0094FE31 /* BaseView.m in Sources */,
+				605616F01D9CB3BB00D89992 /* HomeView.m in Sources */,
 				6042BD0F1D913BB20094FE31 /* FBViewController.m in Sources */,
+				6051CF341D9BCDE100518035 /* UIViewController+JASidePanel.m in Sources */,
+				60BF88DE1D9D0DCE0028D836 /* MenuViewController.m in Sources */,
+				6051CF301D9BCB7400518035 /* HomeViewController.m in Sources */,
 				608EDE6C1D8FA0F100749378 /* AppDelegate.m in Sources */,
+				60BF88E21D9D167F0028D836 /* MenuView.m in Sources */,
+				6051CF2C1D9BC94C00518035 /* JASidePanelController.m in Sources */,
 				608EDE691D8FA0F100749378 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +624,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -593,6 +671,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -620,6 +699,8 @@
 			baseConfigurationReference = 077987B555038895B3005FFA /* Pods-CocoaPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -628,6 +709,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.launchlabs.CocoaPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -636,6 +718,8 @@
 			baseConfigurationReference = 71CA3F837C08BFB6997A71EE /* Pods-CocoaPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -644,6 +728,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.launchlabs.CocoaPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

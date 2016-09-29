@@ -12,7 +12,7 @@
 
 @interface FBView : BaseView
 
-@property (nonatomic) id <FBViewDelegate> fbViewDelegate;
+@property(nonatomic) id<FBViewDelegate> fbViewDelegate;
 
 @end
 

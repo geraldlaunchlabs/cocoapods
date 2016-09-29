@@ -27,7 +27,7 @@
 
 - (void)initView {
     [BaseView setUINaviagtionBar:self.navigationController.navigationBar
-                    barTintColor:[UIColor blueColor]
+                    barTintColor:[BaseView colorWithHexString:@"3b5998"]
                        tintColor:[UIColor whiteColor]
                      translucent:NO];
     
