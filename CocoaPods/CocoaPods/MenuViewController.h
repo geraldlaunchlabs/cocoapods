@@ -6,10 +6,11 @@
 //  Copyright © 2016 LLDM. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "JASidePanelController.h"
+#import "UIViewController+JASidePanel.h"
 #import "MenuView.h"
 
-@interface MenuViewController : BaseViewController {
+@interface MenuViewController : JASidePanelController {
     MenuView *menuView;
 }
 

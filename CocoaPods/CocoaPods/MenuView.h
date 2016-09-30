@@ -8,6 +8,18 @@
 
 #import "BaseView.h"
 
+
+@protocol MenuViewDelegate;
+
 @interface MenuView : BaseView
+
+@property(nonatomic) id<MenuViewDelegate> menuViewDelegate;
+
+@end
+
+
+@protocol MenuViewDelegate<NSObject>
+
+- (IBAction)gotoSender:(id)sender;
 
 @end

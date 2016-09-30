@@ -20,14 +20,16 @@
 
 - (void)loadView {
     [super viewDidLoad];
-    [self initView];
+    [self initialize];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)initView {
+- (void)initialize {
     [BaseView setUINaviagtionBar:self.navigationController.navigationBar
-                    barTintColor:[BaseView colorWithHexString:@"3b5998"]
+                           title:@"FACEBOOK"
+                            font:@"Gotham-Heavy"
+                    barTintColor:[BaseView colorWithHexString:@"415DAE"]
                        tintColor:[UIColor whiteColor]
                      translucent:NO];
     

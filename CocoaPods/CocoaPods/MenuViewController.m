@@ -7,6 +7,9 @@
 //
 
 #import "MenuViewController.h"
+#import "HomeViewController.h"
+#import "FBViewController.h"
+#import "TwitViewController.h"
 
 @interface MenuViewController ()
 
@@ -14,29 +17,34 @@
 
 @implementation MenuViewController
 
-- (void)loadView {
+- (void)viewDidLoad {
     [super viewDidLoad];
-    [self initView];
+    [self initialize];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
-- (void)initView {    
+- (void)initialize {
     menuView = [MenuView new];
-    menuView.baseViewDelegate = self;
     [menuView setupLayout];
     self.view = menuView;
     
     //    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Go to Profile View
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)gotoSender:(id)sender {
+    switch((int)((UIButton *)sender).tag) {
+        case 1: self.sidePanelController.centerPanel = [[UINavigationController alloc]initWithRootViewController:[[HomeViewController alloc]init]];
+            break;
+        case 2: self.sidePanelController.centerPanel = [[UINavigationController alloc]initWithRootViewController:[[FBViewController alloc]init]];
+            break;
+        case 3: self.sidePanelController.centerPanel = [[UINavigationController alloc]initWithRootViewController:[[TwitViewController alloc]init]];
+            break;
+        default: [self.sidePanelController showCenterPanelAnimated:YES];
+            break;
+    }
+    
 }
-*/
 
 @end

@@ -14,6 +14,8 @@
 		6042BD0A1D913B2D0094FE31 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042BD081D913B2D0094FE31 /* BaseViewController.m */; };
 		6042BD0F1D913BB20094FE31 /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042BD0E1D913BB20094FE31 /* FBViewController.m */; };
 		6042BD131D913DAB0094FE31 /* FBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6042BD121D913DAB0094FE31 /* FBView.m */; };
+		604D5E551D9E31D10005B9AE /* TwitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D5E541D9E31D10005B9AE /* TwitViewController.m */; };
+		604D5E591D9E32490005B9AE /* TwitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D5E581D9E32490005B9AE /* TwitView.m */; };
 		6051CF2C1D9BC94C00518035 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051CF2B1D9BC94C00518035 /* JASidePanelController.m */; };
 		6051CF301D9BCB7400518035 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051CF2F1D9BCB7400518035 /* HomeViewController.m */; };
 		6051CF341D9BCDE100518035 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6051CF331D9BCDE100518035 /* UIViewController+JASidePanel.m */; };
@@ -68,6 +70,10 @@
 		6042BD0E1D913BB20094FE31 /* FBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBViewController.m; path = ../../CocoaPods/CocoaPods/FBViewController.m; sourceTree = "<group>"; };
 		6042BD111D913DAB0094FE31 /* FBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBView.h; path = ../../CocoaPods/CocoaPods/FBView.h; sourceTree = "<group>"; };
 		6042BD121D913DAB0094FE31 /* FBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBView.m; path = ../../CocoaPods/CocoaPods/FBView.m; sourceTree = "<group>"; };
+		604D5E531D9E31D10005B9AE /* TwitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitViewController.h; path = ../../CocoaPods/CocoaPods/TwitViewController.h; sourceTree = "<group>"; };
+		604D5E541D9E31D10005B9AE /* TwitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitViewController.m; path = ../../CocoaPods/CocoaPods/TwitViewController.m; sourceTree = "<group>"; };
+		604D5E571D9E32490005B9AE /* TwitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitView.h; path = ../../CocoaPods/CocoaPods/TwitView.h; sourceTree = "<group>"; };
+		604D5E581D9E32490005B9AE /* TwitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitView.m; path = ../../CocoaPods/CocoaPods/TwitView.m; sourceTree = "<group>"; };
 		6051CF2A1D9BC94C00518035 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
 		6051CF2B1D9BC94C00518035 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
 		6051CF2E1D9BCB7400518035 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../../CocoaPods/CocoaPods/HomeViewController.h; sourceTree = "<group>"; };
@@ -179,6 +185,17 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		604D5E561D9E31D70005B9AE /* TwitView */ = {
+			isa = PBXGroup;
+			children = (
+				604D5E571D9E32490005B9AE /* TwitView.h */,
+				604D5E581D9E32490005B9AE /* TwitView.m */,
+				604D5E531D9E31D10005B9AE /* TwitViewController.h */,
+				604D5E541D9E31D10005B9AE /* TwitViewController.m */,
+			);
+			name = TwitView;
+			sourceTree = "<group>";
+		};
 		6051CF2D1D9BC95900518035 /* JASidePanel */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +253,7 @@
 				6051CF311D9BCB7900518035 /* HomeView */,
 				60BF88DF1D9D0DD80028D836 /* MenuView */,
 				6042BD0C1D913B710094FE31 /* FBView */,
+				604D5E561D9E31D70005B9AE /* TwitView */,
 				608EDE761D8FA0F100749378 /* Assets.xcassets */,
 				608EDE7B1D8FA0F100749378 /* Info.plist */,
 				608EDE731D8FA0F100749378 /* CocoaPods.xcdatamodeld */,
@@ -307,6 +325,7 @@
 				608EDE621D8FA0F100749378 /* Resources */,
 				A7464937741706CC1458BC75 /* [CP] Embed Pods Frameworks */,
 				934F4D47EE70A6FBBBC5DD9F /* [CP] Copy Pods Resources */,
+				604D5E5A1D9E5A100005B9AE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -446,6 +465,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		604D5E5A1D9E5A100005B9AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 14ab32f74969445eb9ba967cc0a0ae159b5d2c5c 5fb9bc2947658ee89060bb7bb8d4e59a63af40c45e61329047e5528dda60bb86";
+		};
 		61943B9574DD30D22D6A3222 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,8 +600,10 @@
 				60BF88DE1D9D0DCE0028D836 /* MenuViewController.m in Sources */,
 				6051CF301D9BCB7400518035 /* HomeViewController.m in Sources */,
 				608EDE6C1D8FA0F100749378 /* AppDelegate.m in Sources */,
+				604D5E551D9E31D10005B9AE /* TwitViewController.m in Sources */,
 				60BF88E21D9D167F0028D836 /* MenuView.m in Sources */,
 				6051CF2C1D9BC94C00518035 /* JASidePanelController.m in Sources */,
+				604D5E591D9E32490005B9AE /* TwitView.m in Sources */,
 				608EDE691D8FA0F100749378 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

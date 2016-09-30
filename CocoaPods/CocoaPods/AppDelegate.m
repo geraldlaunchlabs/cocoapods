@@ -10,6 +10,9 @@
 #import "HomeViewController.h"
 #import "MenuViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Fabric/Fabric.h>
+#import <TwitterKit/TwitterKit.h>
+
 
 @interface AppDelegate ()
 
@@ -37,6 +40,8 @@
     [self.window makeKeyAndVisible];
     
     application.statusBarStyle = UIStatusBarStyleLightContent;
+    
+    [Fabric with:@[[Twitter class]]];
     
     // Override point for customization after application launch.
     return YES;

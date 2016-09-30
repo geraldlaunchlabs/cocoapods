@@ -115,7 +115,15 @@
     else return NO;
 }
 
-+ (void)setUINaviagtionBar:(UINavigationBar *)navBar barTintColor:(UIColor *)barTintColor tintColor:(UIColor *)tintColor translucent:(BOOL)trans {
++ (void)setUINaviagtionBar:(UINavigationBar *)navBar title:(NSString *)title font:(NSString *)font barTintColor:(UIColor *)barTintColor tintColor:(UIColor *)tintColor translucent:(BOOL)trans {
+    navBar.topItem.title = title;
+    [navBar setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      tintColor,
+      NSForegroundColorAttributeName,
+      [UIFont fontWithName:font size:0],
+      NSFontAttributeName,
+      nil]];
     navBar.barTintColor = barTintColor;
     navBar.tintColor = tintColor;
     navBar.translucent = trans;

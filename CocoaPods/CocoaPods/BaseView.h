@@ -20,7 +20,7 @@
 + (UIColor *)changeOpacity:(UIColor*)color amount:(CGFloat)amount;
 + (CGFloat)getPortraitWidth;
 - (BOOL)isPortrait;
-+ (void)setUINaviagtionBar:(UINavigationBar *)navBar barTintColor:(UIColor *)barTintColor tintColor:(UIColor *)tintColor translucent:(BOOL)trans;
++ (void)setUINaviagtionBar:(UINavigationBar *)navBar title:(NSString *)title font:(NSString *)font barTintColor:(UIColor *)barTintColor tintColor:(UIColor *)tintColor translucent:(BOOL)trans;
 + (void)viewMakeRound:(UIView *)image;
 + (void)viewAddBorder:(UIView *)view size:(float)size color:(UIColor *)color clipsToBounds:(BOOL)clip;
 + (void)adjustFontSizeToFitLabel:(UILabel *)label;

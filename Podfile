@@ -18,5 +18,9 @@ target 'CocoaPods' do
     inherit! :search_paths
     # Pods for testing
   end
-
+  
 end
+
+pod 'Fabric'
+pod 'TwitterKit'
+pod 'TwitterCore'
