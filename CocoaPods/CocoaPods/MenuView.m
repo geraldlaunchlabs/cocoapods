@@ -11,13 +11,13 @@
 @implementation MenuView
 
 - (void)setupLayout {
-    self.backgroundColor = [BaseView colorWithHexString:@"FA2A01"];
+    self.backgroundColor = [BaseView colorWithHexString:@"646464"];
     
     UIButton *cocoa = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     cocoa.translatesAutoresizingMaskIntoConstraints = NO;
     [cocoa setImage:[UIImage imageNamed:@"cocoaIcon"] forState:UIControlStateNormal];
     cocoa.tintColor = [UIColor whiteColor];
-    //cocoa.backgroundColor = [BaseView colorWithHexString:@"FA2A01"];
+    cocoa.backgroundColor = [BaseView colorWithHexString:@"FA2A01"];
     cocoa.tag = 1;
     [cocoa addTarget:_menuViewDelegate action:@selector(gotoSender:) forControlEvents:UIControlEventTouchDown];
     [self addSubview:cocoa];
@@ -39,6 +39,15 @@
     twitter.tag = 3;
     [twitter addTarget:_menuViewDelegate action:@selector(gotoSender:) forControlEvents:UIControlEventTouchDown];
     [self addSubview:twitter];
+    
+    UIButton *stripe = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    stripe.translatesAutoresizingMaskIntoConstraints = NO;
+    [stripe setImage:[UIImage imageNamed:@"stripeIcon"] forState:UIControlStateNormal];
+    stripe.tintColor = [UIColor whiteColor];
+    stripe.backgroundColor = [BaseView colorWithHexString:@"0075C5"];
+    stripe.tag = 4;
+    [stripe addTarget:_menuViewDelegate action:@selector(gotoSender:) forControlEvents:UIControlEventTouchDown];
+    [self addSubview:stripe];
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:cocoa
                                                      attribute:NSLayoutAttributeTop
@@ -78,7 +87,7 @@
                                                         toItem:cocoa
                                                      attribute:NSLayoutAttributeBottom
                                                     multiplier:1
-                                                      constant:0]];
+                                                      constant:1]];
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:facebook
                                                      attribute:NSLayoutAttributeLeft
@@ -110,13 +119,13 @@
                                                         toItem:facebook
                                                      attribute:NSLayoutAttributeBottom
                                                     multiplier:1
-                                                      constant:0]];
+                                                      constant:1]];
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:twitter
-                                                     attribute:NSLayoutAttributeBottom
+                                                     attribute:NSLayoutAttributeLeft
                                                      relatedBy:NSLayoutRelationEqual
-                                                        toItem:self
-                                                     attribute:NSLayoutAttributeBottom
+                                                        toItem:facebook
+                                                     attribute:NSLayoutAttributeLeft
                                                     multiplier:1
                                                       constant:0]];
     
@@ -129,6 +138,38 @@
                                                       constant:0]];
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:twitter
+                                                     attribute:NSLayoutAttributeHeight
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:stripe
+                                                     attribute:NSLayoutAttributeHeight
+                                                    multiplier:1
+                                                      constant:0]];
+    
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:stripe
+                                                     attribute:NSLayoutAttributeTop
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:twitter
+                                                     attribute:NSLayoutAttributeBottom
+                                                    multiplier:1
+                                                      constant:1]];
+    
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:stripe
+                                                     attribute:NSLayoutAttributeBottom
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:self
+                                                     attribute:NSLayoutAttributeBottom
+                                                    multiplier:1
+                                                      constant:-1]];
+    
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:stripe
+                                                     attribute:NSLayoutAttributeRight
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:twitter
+                                                     attribute:NSLayoutAttributeRight
+                                                    multiplier:1
+                                                      constant:0]];
+    
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:stripe
                                                      attribute:NSLayoutAttributeLeft
                                                      relatedBy:NSLayoutRelationEqual
                                                         toItem:self
