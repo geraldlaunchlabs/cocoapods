@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 #import "FBViewController.h"
 #import "TwitViewController.h"
+#import "StripeViewController.h"
 
 @interface MenuViewController ()
 
@@ -31,7 +32,7 @@
     //    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
-#pragma mark - Go to Profile View
+#pragma mark - Go to Sender
 
 - (IBAction)gotoSender:(id)sender {
     switch((int)((UIButton *)sender).tag) {
@@ -40,6 +41,8 @@
         case 2: self.sidePanelController.centerPanel = [[UINavigationController alloc]initWithRootViewController:[[FBViewController alloc]init]];
             break;
         case 3: self.sidePanelController.centerPanel = [[UINavigationController alloc]initWithRootViewController:[[TwitViewController alloc]init]];
+            break;
+        case 4: self.sidePanelController.centerPanel = [[UINavigationController alloc]initWithRootViewController:[[StripeViewController alloc]init]];
             break;
         default: [self.sidePanelController showCenterPanelAnimated:YES];
             break;

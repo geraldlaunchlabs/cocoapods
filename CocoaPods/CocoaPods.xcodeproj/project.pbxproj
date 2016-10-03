@@ -27,6 +27,8 @@
 		608EDE771D8FA0F100749378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608EDE761D8FA0F100749378 /* Assets.xcassets */; };
 		608EDE851D8FA0F100749378 /* CocoaPodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE841D8FA0F100749378 /* CocoaPodsTests.m */; };
 		608EDE901D8FA0F100749378 /* CocoaPodsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608EDE8F1D8FA0F100749378 /* CocoaPodsUITests.m */; };
+		60A3881B1DA2042E0074367A /* StripeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A3881A1DA2042E0074367A /* StripeViewController.m */; };
+		60A3881E1DA204440074367A /* StripeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A3881D1DA204440074367A /* StripeView.m */; };
 		60BF88DB1D9D04870028D836 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BF88DA1D9D04870028D836 /* Launch Screen.storyboard */; };
 		60BF88DE1D9D0DCE0028D836 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF88DD1D9D0DCE0028D836 /* MenuViewController.m */; };
 		60BF88E21D9D167F0028D836 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF88E11D9D167F0028D836 /* MenuView.m */; };
@@ -96,6 +98,10 @@
 		608EDE8B1D8FA0F100749378 /* CocoaPodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608EDE8F1D8FA0F100749378 /* CocoaPodsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsUITests.m; sourceTree = "<group>"; };
 		608EDE911D8FA0F100749378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A388191DA2042E0074367A /* StripeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StripeViewController.h; path = ../../CocoaPods/CocoaPods/StripeViewController.h; sourceTree = "<group>"; };
+		60A3881A1DA2042E0074367A /* StripeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StripeViewController.m; path = ../../CocoaPods/CocoaPods/StripeViewController.m; sourceTree = "<group>"; };
+		60A3881C1DA204440074367A /* StripeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StripeView.h; path = ../../CocoaPods/CocoaPods/StripeView.h; sourceTree = "<group>"; };
+		60A3881D1DA204440074367A /* StripeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StripeView.m; path = ../../CocoaPods/CocoaPods/StripeView.m; sourceTree = "<group>"; };
 		60BF88DA1D9D04870028D836 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		60BF88DC1D9D0DCE0028D836 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../../CocoaPods/CocoaPods/MenuViewController.h; sourceTree = "<group>"; };
 		60BF88DD1D9D0DCE0028D836 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../../CocoaPods/CocoaPods/MenuViewController.m; sourceTree = "<group>"; };
@@ -254,6 +260,7 @@
 				60BF88DF1D9D0DD80028D836 /* MenuView */,
 				6042BD0C1D913B710094FE31 /* FBView */,
 				604D5E561D9E31D70005B9AE /* TwitView */,
+				60A3881F1DA2045A0074367A /* StripeView */,
 				608EDE761D8FA0F100749378 /* Assets.xcassets */,
 				608EDE7B1D8FA0F100749378 /* Info.plist */,
 				608EDE731D8FA0F100749378 /* CocoaPods.xcdatamodeld */,
@@ -286,6 +293,17 @@
 				608EDE911D8FA0F100749378 /* Info.plist */,
 			);
 			path = CocoaPodsUITests;
+			sourceTree = "<group>";
+		};
+		60A3881F1DA2045A0074367A /* StripeView */ = {
+			isa = PBXGroup;
+			children = (
+				60A3881C1DA204440074367A /* StripeView.h */,
+				60A3881D1DA204440074367A /* StripeView.m */,
+				60A388191DA2042E0074367A /* StripeViewController.h */,
+				60A3881A1DA2042E0074367A /* StripeViewController.m */,
+			);
+			name = StripeView;
 			sourceTree = "<group>";
 		};
 		60BF88DF1D9D0DD80028D836 /* MenuView */ = {
@@ -597,11 +615,13 @@
 				605616F01D9CB3BB00D89992 /* HomeView.m in Sources */,
 				6042BD0F1D913BB20094FE31 /* FBViewController.m in Sources */,
 				6051CF341D9BCDE100518035 /* UIViewController+JASidePanel.m in Sources */,
+				60A3881B1DA2042E0074367A /* StripeViewController.m in Sources */,
 				60BF88DE1D9D0DCE0028D836 /* MenuViewController.m in Sources */,
 				6051CF301D9BCB7400518035 /* HomeViewController.m in Sources */,
 				608EDE6C1D8FA0F100749378 /* AppDelegate.m in Sources */,
 				604D5E551D9E31D10005B9AE /* TwitViewController.m in Sources */,
 				60BF88E21D9D167F0028D836 /* MenuView.m in Sources */,
+				60A3881E1DA204440074367A /* StripeView.m in Sources */,
 				6051CF2C1D9BC94C00518035 /* JASidePanelController.m in Sources */,
 				604D5E591D9E32490005B9AE /* TwitView.m in Sources */,
 				608EDE691D8FA0F100749378 /* main.m in Sources */,

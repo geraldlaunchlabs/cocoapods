@@ -24,3 +24,4 @@ end
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'TwitterCore'
+pod 'Stripe'

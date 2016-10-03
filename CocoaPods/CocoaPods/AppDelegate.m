@@ -12,6 +12,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <Fabric/Fabric.h>
 #import <TwitterKit/TwitterKit.h>
+#import <Stripe/Stripe.h>
 
 
 @interface AppDelegate ()
@@ -42,6 +43,10 @@
     application.statusBarStyle = UIStatusBarStyleLightContent;
     
     [Fabric with:@[[Twitter class]]];
+    
+    [[STPPaymentConfiguration sharedConfiguration] setPublishableKey:@"pk_test_nlKtc49TquS7AB93x6rXTSdV"];
+    
+    [[STPTheme defaultTheme] setAccentColor:[UIColor blueColor]];
     
     // Override point for customization after application launch.
     return YES;
